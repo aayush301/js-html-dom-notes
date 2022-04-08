@@ -1,0 +1,6 @@
+HTMLCollection Object = array-like list of HTML element objects.
+
+Properties and Methods
+	.length
+	.item(index) or [index]
+	.namedItem(name/id) or [name/id]

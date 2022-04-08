@@ -1,0 +1,9 @@
+Everything is a node.
+1. The document is a document node.
+2. All HTML elements are element nodes.
+3. All HTML attributes are attribute nodes.
+4. Text inside HTML attributes are text nodes.
+5. Comments are comment nodes.
+
+Elements are special types of nodes.
+"Node" is an abstract base class.

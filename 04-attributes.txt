@@ -1,0 +1,19 @@
+node.attributes			// returns namedNodeMap Object representing a collection of node's attributes
+
+element.getAttribute("href")		// returns attribute value
+element.getAttributeNode("href")	// returns attribute object
+element.setAttribute("href", "xyz")
+node.setAttributeNode(attrNode)
+element.hasAttribute("href")		// returns whether element has specified attribute
+element.title						// sets or returns title attribute of an element
+element.id							// sets or returns id attribute of an element
+element.className					// sets or returns class names of an element
+
+element.classList					// returns the list of classNames as DOMTokenList Object
+  Properties and Methods:
+    length
+    add(class1,class2,...)
+    contains(class)
+    item(index)
+    remove(class1, class2, ...)
+    toggle(class1, class2, ...)

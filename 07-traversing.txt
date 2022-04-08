@@ -1,0 +1,22 @@
+// 1. Traversing ancestors
+node.parentNode		// returns parent node
+node.parentElement	// returns parent element, if parent node is an element node, otherwise null.
+
+
+// 2. Traversing descendants
+node.childElementCount	// returns the no. of child element nodes only.
+node.childNodes		// returns a NodeList object representing child nodes (including text and comment nodes).
+node.children		// returns HTMLCollection object representing child elements (excluding text and comment nodes).
+node.hasChildNodes()	// returns true if the node has any child nodes.
+node.contains(node)		// returns true if node is descendant of specified node.
+node.firstChild			// returns first child node
+node.firstElementChild	// returns first child element
+node.lastChild			// returns last child node
+node.lastElementChild	// returns last child element
+
+
+// 3. Traversing siblings
+node.nextSibling		// returns next node sibling
+node.nextElementSibling	// returns next element sibling
+node.previousSibling	// returns returns previous node sibling
+node.previousElementSibling		// returns previous element sibling

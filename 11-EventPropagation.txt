@@ -1,0 +1,12 @@
+Event Propagation: Event Capturing and Event Bubbling
+
+When an event (e.g., click) occurs in an element, and the element along with some of its parents have also registered for that event, then
+1. Event capturing means: First its parent executes its event handler and then the element (Propagation from outer to inner).
+2. Event Bubbling means:  First the element executes its event handler and then its parent (Propagation from inner to outer).
+
+Now, the accepted model by W3C is:
+First event capturing occurs followed by event bubbling.
+This means that first the event is captured by the element's parents until it reaches the target (element) and then bubbles up again.
+We, as web developer can choose whether to register an event handler in the capturing phase or bubbling phase:
+  element.addEventListener("click", ()=> {...}, {capture: true})  // default is capture:false
+

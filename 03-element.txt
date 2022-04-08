@@ -1,0 +1,26 @@
+element.getElementsByClassName("class")	// returns an HTML collection object
+element.getElementsByTagName("div")		// returns an HTML collection object
+element.querySelectorAll("selector")	// returns a NodeList object (collection of HTML nodes)
+element.querySelector("selector")
+
+
+element.innerHTML		// sets or returns the content of an element
+element.innerText		// sets or returns the text content of the specified node and all its descendants.
+		-- If we set it, then any child nodes are removed and replaced by a single text node containing specified string.
+element.textContent		// sets or returns the text content of the specified node and all its descendants.
+		-- If we set it, then any child nodes are removed and replaced by a single text node containing specified string.
+
+Differences b/w two:
+1. textContent will display extra spaces, if present in code, but innerText will not.
+2. textContent will also display text content of hidden elements, but innerText will not.
+
+
+element.tagName		// returns tag name
+element.addEventListener("click", fun)
+node.cloneNode(deep)	// copy and return the clone.
+		-- if deep is true, then all its descendants are also cloned.
+
+
+
+// CSS
+element.style.property = value

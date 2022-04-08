@@ -1,0 +1,22 @@
+node.appendChild(node)	// appends and returns the node object
+		-- If given node is an existing node in document, it will be moved.
+
+element.append(node1, node2, ...)	// appends node1, node2, ...
+		-- If given node is an existing node in document, it will be moved.
+
+element.prepend(node1, node2, ...)
+		-- If given node is an existing node in document, it will be moved.
+
+
+node.insertAdjacentElement(position, element)
+		-- If given element is an existing element in document, it will be moved.
+node.insertAdjacentHTML(position, "<b>Hello</b>")
+node.insertAdjacentText(position, "text")
+position values:
+			-- "afterbegin": After the beginning of the element (as first child)
+			-- "afterend": After the element
+			-- "beforebegin": before the element
+			-- "beforeend": Before the end of element (as last child)
+
+node.insertBefore(newNode, existingNode)	// inserts newNode before existingNode
+		-- If given node is an existing node in document, it will be moved.

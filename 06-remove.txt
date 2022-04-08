@@ -1,0 +1,7 @@
+node.remove()	// removes the node from DOM
+node.removeAttribute("href")
+node.removeAttributeNode(attrNode)
+node.removeChild(node)	// removes and returns the node.
+node.replaceChild(newNode, oldNode)
+
+element.removeEventListener("click", function)	// function must be external

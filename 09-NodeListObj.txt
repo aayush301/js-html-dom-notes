@@ -1,0 +1,12 @@
+NodeList Object = array-like list of nodes.
+These differ from HTMLCollection object in the sense that
+	in addition to element nodes, NodeList object can also contain text nodes, comment nodes, or attribute nodes.
+
+
+Properties and Methods
+	.length
+	.item(index) or [index]
+	.forEach(function(currentNode, currentIndex, NodeListObj){})
+
+Alternative to forEach: for...of
+Dont't use for...in loop, use for...of loop instead.

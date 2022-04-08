@@ -1,0 +1,30 @@
+When an HTML document is loaded into a web browser, it becomes a document object.
+The document object is the root node of HTML document.
+
+document.getElementById("id")				// returns an HTML element object
+document.getElementsByTagName("div")		// returns an HTML collection object (collection of HTML element objects)
+document.getElementsByClassName("class")	// returns an HTML collection object (collection of HTML element objects)
+document.querySelectorAll("selector")		// returns a NodeList object (collection of HTML nodes)
+document.querySelector("selector")
+
+document.forms		// returns HTML collection of <form> elements
+document.images		// returns HTML collection of <img> elements
+document.links		// returns HTML collection of <a> and <area> elements that have href attributes
+document.scripts	// returns HTML collection of <script> elements
+
+document.head		// returns the <head> element of document
+document.body		// sets or returns the <body> element of document
+document.title		// sets or returns title of document
+document.all		// returns HTML collection of all elements in document
+
+document.domain
+document.URL
+document.doctype
+document.write("text")
+
+
+
+// Creating nodes
+x = document.createElement("div")		// creates and returns an element node object.
+x = document.createTextNode("text")		// creates and returns a text node object.
+x = document.createComment("text")		// creates and returns a comment node object.

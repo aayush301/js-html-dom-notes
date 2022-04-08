@@ -1,0 +1,45 @@
+element.addEventListener("click", fun)
+element.addEventListener("dblclick", fun)
+element.addEventListener("mousedown", fun)
+element.addEventListener("mouseup", fun)
+
+element.addEventListener("mouseenter", fun)
+element.addEventListener("mouseleave", fun)
+
+element.addEventListener("mouseover", fun)		// when mouse is moved onto an element, or onto one of its children.
+element.addEventListener("mouseout", fun)		// when mouse is moved out of an element, or out of one of its children.
+
+element.addEventListener("mousemove", fun)
+
+element.addEventListener("keydown", fun)
+element.addEventListener("keypress", fun)
+element.addEventListener("keyup", fun)
+
+element.addEventListener("focus", fun)
+element.addEventListener("blur", fun)
+
+element.addEventListener("change", fun)
+element.addEventListener("submit", fun)
+
+
+function fun(e)
+{
+	console.log(e.key)		// for keyboard event
+	console.log(e.target);
+	console.log(e.target.id);
+	console.log(e.target.className);
+	console.log(e.target.classList);
+	console.log(e.target.value);
+	
+	console.log(e.type);
+	console.log(e.clientX);
+	console.log(e.clientY);
+	console.log(e.offsetX);
+	console.log(e.offsetY);
+	console.log(e.altKey);
+	console.log(e.ctrlKey);
+	console.log(e.shiftKey);
+	
+	
+	
+}

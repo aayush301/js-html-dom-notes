@@ -1,0 +1,58 @@
+1. element.offsetParent:
+  - returns the nearest ancestor that has a position other than static.
+  - returns null if the element is not visible (display="none")
+
+2. element.offsetLeft:
+  returns a number representing the offset to the left in pixels from the closest relatively(relative/absolute/sticky/fixed) positioned parent element.
+  The returned value includes:
+    - the left position, and margin of the element
+    - the left padding, scrollbar and border of the parent
+
+3. element.offsetTop: Similar to above
+
+4. element.offsetWidth:
+  - returns the viewable width of an element (in pixels) including padding, border and scrollbar, but not the margin.
+  - If the element is hidden (for example, by setting style.display on the element or one of its ancestors to "none"), then 0 is returned.
+  -Note: This property will round the value to an integer
+
+5. element.offsetHeight: Similar to above
+
+6. element.clientLeft:
+  - returns the width of the element's left border, in pixels.
+
+7. element.clientTop: Similar to above
+
+8. element.clientWidth: 
+  - returns the viewable width of an element in pixels, including padding, but not the border, scrollbar or margin.
+
+9. element.clientHeight: Similar to above
+
+10. element.scrollWidth:
+  -  returns the entire width of an element in pixels, including padding, but not the border, scrollbar or margin.
+  - It also includes the width that is not viewable (because of overflow).
+
+11. element.scrollHeight: Similar to above
+
+12. element.scrollLeft:
+  - sets or returns the number of pixels an element's content is scrolled horizontally.
+
+13. element.scrollTop: Similar to above
+
+14. element.scrollIntoView(alignTo):
+  - scrolls the specified element into the visible area of the browser window.
+  - alignTo(optional): boolean
+
+15. element.getBoundingClientRect();
+  - returns {
+    left,
+    top,
+    right,
+    bottom,
+    x,
+    y,
+    width,
+    height
+  }
+  - Properties other than width and height are relative to top-left of the viewport.
+  - Width and height include the padding and border
+  - Image: https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect/element-box-diagram.png
